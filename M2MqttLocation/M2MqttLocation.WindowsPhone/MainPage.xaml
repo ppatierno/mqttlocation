@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="M2MqttLocation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:M2MqttLocation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock Text="GeoService" HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Start" Margin="0,0,0,0" x:Name="Start" Click="Start_Click"/>
+            <Button Content="Stop" Margin="10,0,0,0" x:Name="Stop" Click="Stop_Click"/>
+        </StackPanel>
+        <TextBlock Text="Geofence" HorizontalAlignment="Center" Style="{StaticResource TitleTextBlockStyle}" />
+        <TextBlock Text="Name" Style="{StaticResource BaseTextBlockStyle}" Margin="10,10,10,0"/>
+        <TextBox x:Name="tBoxName" Margin="10,10,10,10"/>
+        <TextBlock Text="Latitude" Style="{StaticResource BaseTextBlockStyle}" Margin="10,10,10,0"/>
+        <TextBox x:Name="tBoxLatitude" Margin="10,10,10,10"/>
+        <TextBlock Text="-90 to 90 degrees" Margin="10,0,10,10"/>
+        <TextBlock Text="Longitude" Style="{StaticResource BaseTextBlockStyle}" Margin="10,10,10,0"/>
+        <TextBox x:Name="tBoxLongitude" Margin="10,10,10,10"/>
+        <TextBlock Text="-180 to 180 degrees" Margin="10,0,10,10"/>
+        <TextBlock Text="Radius" Style="{StaticResource BaseTextBlockStyle}" Margin="10,10,10,0"/>
+        <TextBox x:Name="tBoxRadius" Margin="10,10,10,10" />
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Add" Margin="10,0,0,0" x:Name="Add" Click="Add_Click"/>
+            <Button Content="Clear" Margin="10,0,0,0" x:Name="Clear" Click="Clear_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Page>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>92ca946e-da7e-4427-87d7-041d802ad6cf</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>M2MqttLocation</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Services\GeoPositionChangedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\GeoServiceBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\HttpGeoService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IGeoService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MqttGeoService.cs" />
+  </ItemGroup>
+</Project>
