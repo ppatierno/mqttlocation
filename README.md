@@ -1,7 +1,9 @@
 mqttlocation
 ============
 
-This is demo project showed in my session at Mobile Camp 2014 in Naples about geolocation with MQTT (vs HTTP) on Windows Phone 8.1 and Windows 8.1 devices
+This is demo project showed in my session at Mobile Camp 2014 in Naples about geolocation with MQTT (vs HTTP) on Windows Phone 8.1 and Windows 8.1 devices.
+
+Related slides are on SlideShare : http://www.slideshare.net/paolopat/mqtt-and-geolocation
 
 This demo also contains M2Mqtt project but the original source code could be get at following repositories :
 
